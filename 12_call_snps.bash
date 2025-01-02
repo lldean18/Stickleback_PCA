@@ -1,6 +1,6 @@
 #!/bin/bash
 # Laura Dean
-# 20/12/24
+# 2/1/25
 # For running on the UoN HPC Ada
 
 #SBATCH --partition=defq
@@ -33,7 +33,7 @@ regionsdir=/gpfs01/home/mbzlld/code_and_scripts/Regions_files/G_aculeatus
 module load bcftools-uoneasy/1.18-GCC-13.2.0
 
 # print to the file the array that is being worked on...
-echo "This is array task ${SLURM_ARRAY_TASK_ID}, calling SNPs for chromosome ${chr},
+echo "This is array task $SLURM_ARRAY_TASK_ID, calling SNPs for chromosome ${chr},
 and writing them to the file ${VCF}"
 
 ############################
